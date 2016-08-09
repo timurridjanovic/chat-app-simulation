@@ -28,7 +28,7 @@ export class Chat extends React.Component {
 			'Hi how are you?',
 			'Do you want to chat?',
 			'What is your ASL?',
-			'My name is ' + this.state.computer,
+			'My name is ' + this.props.target,
 			'What is your name?'
 		];
 
