@@ -1,0 +1,133 @@
+
+.messages {
+	@include column(12);
+	min-height: 10em;
+	max-height: 30em;
+	overflow: scroll;
+	box-sizing: border-box;
+	border: 1px solid $blue;
+	padding-bottom: 2em;
+
+	.receiver-name {
+		padding: 1em 0;
+		text-align: center;
+		border-bottom: 1px solid $blue;
+	}
+
+	.date-group {
+		@include column(12);
+
+		.date {
+			color: $blue;
+			padding: 1em;
+		}
+
+		.reply-wrapper {
+			@include column(10);
+			@include desktop {
+				@include column(11);
+			}
+		}
+
+		.reply-status {
+			float: right;
+			padding: 0.5em 1.5em;
+			margin-top: 0.5em;
+			border-radius: 0.8em;
+			background-color: $gray-2;
+
+			.one, .two, .three {
+				display: inline-block;
+				background-color: $azur;
+				border-radius: 100%;
+				width: 1px;
+				height: 1px;
+				padding: 0.2em;
+				vertical-align: middle;
+			}
+
+			.one {
+				opacity: 0;
+				-webkit-animation: dot 1.3s infinite;
+				-webkit-animation-delay: 0.0s;
+				animation: dot 1.3s infinite;
+				animation-delay: 0.0s;
+			}
+
+			.two {
+				margin-left: 0.3em;
+				opacity: 0;
+				-webkit-animation: dot 1.3s infinite;
+				-webkit-animation-delay: 0.2s;
+				animation: dot 1.3s infinite;
+				animation-delay: 0.2s;
+			}
+
+			.three {
+				margin-left: 0.3em;
+				opacity: 0;
+				-webkit-animation: dot 1.3s infinite;
+				-webkit-animation-delay: 0.3s;
+				animation: dot 1.3s infinite;
+				animation-delay: 0.3s;
+			}
+
+			@-webkit-keyframes dot {
+				  0% { opacity: 0; }
+				 50% { opacity: 0; }
+				100% { opacity: 1; }
+			}
+
+			@keyframes dot {
+				  0% { opacity: 0; }
+				 50% { opacity: 0; }
+				100% { opacity: 1; }
+			}
+		}
+	}
+
+	.message {
+		&.received {
+			.body {
+				.bubble {
+					float: right;
+					background-color: $gray-2;
+				}
+			}
+		}
+
+		padding-top: 0.5em;
+		@include column(12);
+
+		.user {
+			font-size: 0.8em;
+		}
+
+		.body {
+			.bubble {
+				padding: 1em;
+				background-color: $azur;
+				border-radius: 1em;
+				word-wrap: break-word;
+				display: inline-block;
+				max-width: 100%;
+				box-sizing: border-box;
+			}
+
+			display: inline-block;
+			@include column(10);
+			@include desktop {
+				@include column(11);
+			}
+		}
+
+		.time {
+			font-size: 0.8em;
+			text-align: right;
+			@include column(2);
+			@include desktop {
+				@include column(1);
+			}
+		}
+	}
+}

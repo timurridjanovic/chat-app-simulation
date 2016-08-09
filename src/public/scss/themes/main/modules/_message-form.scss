@@ -1,0 +1,21 @@
+
+
+.message-form {
+	clear: both;
+	@include column(12);
+	border: 1px solid $blue;
+	border-top: none;
+	box-sizing: border-box;
+
+	.message-input {
+		width: 80%;
+		box-sizing: border-box;
+	}
+
+	.message-submit {
+		width: 20%;
+		background-color: $gray-2;
+		border: 1px solid $gray-2;
+		cursor: pointer;
+	}
+}

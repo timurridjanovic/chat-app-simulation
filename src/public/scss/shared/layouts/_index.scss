@@ -1,0 +1,9 @@
+$mainNavShadowCompensation: 7px;
+$mainNavLeftSpacingCompensation: 14px;
+
+@import 'grid';
+@import 'breakpoints';
+
+.body-content {
+	margin-top: -$mainNavShadowCompensation;
+}

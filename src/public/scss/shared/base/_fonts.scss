@@ -1,0 +1,70 @@
+
+@font-face {
+	font-family: 'BentonSans';
+	src: local('Benton Sans Regular');
+	src: url('./fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-2.eot');
+	src: url('./fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-2.eot?') format('embedded-opentype'),url('./fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-3.woff') format('woff'),url('./fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-1.ttf') format('truetype'),url('./fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-4.svg#web') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'BentonSans-Bd';
+	src: local('Benton Sans Bold');
+	src: url('./fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-2.eot');
+	src: url('./fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-2.eot?') format('embedded-opentype'),url('./fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-3.woff') format('woff'),url('./fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-1.ttf') format('truetype'),url('./fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-4.svg#web') format('svg');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'BentonSans-Bk';
+	src: local('Benton Sans Book');
+	src: url('./fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-2.eot');
+	src: url('./fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-2.eot?') format('embedded-opentype'),url('./fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-3.woff') format('woff'),url('./fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-1.ttf') format('truetype'),url('./fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-4.svg#web') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'BentonSans-Lt';
+	src: local('Benton Sans Light');
+	src: url('./fonts/481b5db4-48a0-4c43-ae8b-fd1a0b7cb481-2.eot');
+	src: url('./fonts/481b5db4-48a0-4c43-ae8b-fd1a0b7cb481-2.eot?') format('embedded-opentype'),url('./fonts/481b5db4-48a0-4c43-ae8b-fd1a0b7cb481-3.woff') format('woff'),url('./fonts/481b5db4-48a0-4c43-ae8b-fd1a0b7cb481-1.ttf') format('truetype'),url('./fonts/481b5db4-48a0-4c43-ae8b-fd1a0b7cb481-4.svg#web') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'BentonSans-Md';
+	src: local('Benton Sans Medium');
+	src: url('./fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-2.eot');
+	src: url('./fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-2.eot?') format('embedded-opentype'),url('./fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-3.woff') format('woff'),url('./fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-1.ttf') format('truetype'),url('./fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-4.svg#web') format('svg');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'BentonSans-CondMd';
+	src: local('Benton Sans Condensed Medium');
+	src: url('./fonts/66edbae4-0c00-4453-9c58-c0c4cb412064-2.eot');
+	src: url('./fonts/66edbae4-0c00-4453-9c58-c0c4cb412064-2.eot?') format('embedded-opentype'),url('./fonts/66edbae4-0c00-4453-9c58-c0c4cb412064-3.woff') format('woff'),url('./fonts/66edbae4-0c00-4453-9c58-c0c4cb412064-1.ttf') format('truetype'),url('./fonts/66edbae4-0c00-4453-9c58-c0c4cb412064-4.svg#web') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('./fonts/fontawesome-webfont-3.2.1.eot');
+	src: url('./fonts/fontawesome-webfont-3.2.1.eot') format('embedded-opentype'), url('./fonts/fontawesome-webfont-3.2.1.woff') format('woff'), url('./fonts/fontawesome-webfont-3.2.1.ttf') format('truetype'), url('./fonts/fontawesome-webfont-3.2.1.svg#web') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+$fallbackFont: 'Helvetica Neue', Helvetica, sans-serif;
+
+
+$secondaryFont: Arial, $fallbackFont;
+$primaryFont: 'BentonSans', $secondaryFont;
+
